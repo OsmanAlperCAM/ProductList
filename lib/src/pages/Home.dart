@@ -104,6 +104,7 @@ class _HomeState extends State<Home> {
                 onChanged: (text) {
                   productName = text;
                 },
+                cursorColor: const Color(0xFF475963),
                 decoration: const InputDecoration(
                   labelText: 'Product Name',
                   labelStyle: TextStyle(color: Color(0xFF475963)),
@@ -121,9 +122,11 @@ class _HomeState extends State<Home> {
               padding: const EdgeInsets.all(8.0),
               child: TextFormField(
                 controller: productPriceController,
+                keyboardType: TextInputType.number,
                 onChanged: (text) {
                   productPrice = text;
                 },
+                cursorColor: const Color(0xFF475963),
                 decoration: const InputDecoration(
                   labelText: 'Price',
                   labelStyle: TextStyle(color: Color(0xFF475963)),
